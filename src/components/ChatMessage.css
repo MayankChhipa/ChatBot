@@ -1,0 +1,35 @@
+    .chat-message-user {
+      display: flex;
+      justify-content: end;
+      margin: 10px;
+      align-items: start;
+    }
+
+    .chat-message-robo {
+      display: flex;
+      justify-content: start;
+      margin: 10px;
+      align-items: start;
+
+    }
+
+    .chat-message-text {
+      background-color: rgb(221, 220, 220);
+      border-radius: 15px;
+      padding: 15px;
+      margin: 10px;
+      max-width: 300px;
+      line-height: 1.20;
+    }
+
+    .chat-message-profile {
+      width: 50px;
+    }
+
+    .chatmessage-time{
+      font-size: 15px;
+      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      color: rgb(113, 112, 112);
+      margin: 4px 0 0;
+      
+    }
