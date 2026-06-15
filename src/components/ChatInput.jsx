@@ -59,11 +59,12 @@ export function ChatInput({ chatMessages, setChatMessages }) {
         setChatMessages([]);
       }
 
+      const isInputEmpty = !inputText.trim();
+
       return (
         <div className="chat-input-conatiner">
           <input
-            placeholder="Send a Message to Chatbot"
-            size="30"
+            placeholder="Send a message..."
             onChange={saveInputText}
             value={inputText}
             onKeyDown={enterText}
@@ -71,11 +72,15 @@ export function ChatInput({ chatMessages, setChatMessages }) {
           />
           <button
             onClick={sendMessage}
-            className="send-button"> Send 
+            className="send-button"
+            disabled={isInputEmpty}
+          >
+            →
           </button>
 
-          <button onClick={clearText} class="clear-button">CLear</button>
-
+          <button onClick={clearText} className="clear-button" disabled={!chatMessages.length}>
+            Clear
+          </button>
         </div>
       );
     }

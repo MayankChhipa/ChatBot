@@ -39,7 +39,7 @@ import  dayjs  from 'dayjs';
 
           <div className="chat-message-text">
             {message}
-            <p class="chatmessage-time">{time}</p>
+            <p className="chatmessage-time">{time}</p>
           </div>
 
           {sender === 'user' && (

@@ -1,34 +1,21 @@
- .app-container {
-      display: flex;
-      flex-direction: column;
-      max-width: 600px;
-      margin-left: auto;
-      margin-right: auto;
-      margin-bottom: 20px;
-      min-height: 100vh;
-      padding: 16px;
-    }
+.app-container {
+  display: flex;
+  flex-direction: column;
+  max-width: 640px;
+  margin: 0 auto;
+  min-height: 100vh;
+  padding: 100px 20px 120px;
+  background: transparent;
+}
 
-    .app-header {
-      display: flex;
-      justify-content: flex-end;
-      margin-bottom: 16px;
-    }
+.welcome-message {
+  text-align: center;
+  padding: 40px 16px;
+  color: #558d47;
+  font-size: 18px;
+  line-height: 1.6;
+}
 
-    .login-button {
-      padding: 10px 18px;
-      background-color: #5a67d8;
-      color: #fff;
-      border: none;
-      border-radius: 8px;
-      cursor: pointer;
-      font-weight: 600;
-    }
-
-    .login-button:hover {
-      background-color: #434190;
-    }
-
-    .welcome-message {
-      text-align: center;
-    }
+.welcome-message strong {
+  color: #2A3B22;
+}

@@ -38,24 +38,26 @@ function App() {
 
 
       return (
-        <div className="app-container">
-          
-          {chatMessages.length === 0 && (
-            <p className="welcome-message">
-              Welcome to the chatbot project! Send a message using the textbox below.
-            </p>
-          )}
+        <>
+          <div className="app-container">
+            
+            {chatMessages.length === 0 && (
+              <p className="welcome-message">
+                Welcome to the chatbot project! Send a message using the textbox below.
+              </p>
+            )}
 
 
-          <ChatMessages
-            chatMessages={chatMessages}
-          />
+            <ChatMessages
+              chatMessages={chatMessages}
+            />
 
-          <ChatInput
-            chatMessages={chatMessages}
-            setChatMessages={setChatMessages}
-          />
-        </div>
+            <ChatInput
+              chatMessages={chatMessages}
+              setChatMessages={setChatMessages}
+            />
+          </div>
+        </>
       );
 
 }

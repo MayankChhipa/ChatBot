@@ -1,6 +1,26 @@
-    .chat-messages-container {
-      flex-grow: 1;
-      margin-top: 20px;
-      overflow: scroll;
-      scrollbar-width: none;
-    }
+.chat-messages-container {
+  flex-grow: 1;
+  margin-top: 20px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding-bottom: 20px;
+  scrollbar-width: thin;
+  scrollbar-color: rgba(149, 157, 165, 0.35) rgba(244, 241, 234, 0.95);
+}
+
+.chat-messages-container::-webkit-scrollbar {
+  width: 10px;
+}
+
+.chat-messages-container::-webkit-scrollbar-track {
+  background: rgba(244, 241, 234, 0.95);
+}
+
+.chat-messages-container::-webkit-scrollbar-thumb {
+  background: rgba(149, 157, 165, 0.35);
+  border-radius: 999px;
+}
+
+.chat-messages-container::-webkit-scrollbar-thumb:hover {
+  background: rgba(149, 157, 165, 0.55);
+}
