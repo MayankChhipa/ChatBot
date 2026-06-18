@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import { ChatInput } from './components/ChatInput';
+import { Navbar } from './components/Navbar';
 import './App.css'
 import { ChatMessages } from './components/ChatMessages';
 import { Chatbot } from 'supersimpledev'
@@ -39,6 +40,8 @@ function App() {
 
       return (
         <>
+          <Navbar />
+
           <div className="app-container">
             
             {chatMessages.length === 0 && (
