@@ -1,6 +1,6 @@
 import './login.css';
 
-export function login() {
+export function Login() {
   return (
     <div className="login-container">
       <h2>Login</h2>
